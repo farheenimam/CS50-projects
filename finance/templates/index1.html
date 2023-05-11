@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block title %}
+   Home
+{% endblock %}
+
+{% block main %}
+<main class="container py-6 text-center">
+<table class="table table-striped">
+    <thead>
+        <tr class="table-dark">
+            <th class="text-start">Symbol</th>
+            <th class="text-start">Name</th>
+            <th class="text-end">Shares</th>
+            <th class="text-end">Price</th>
+            <th class="text-end">TOTAL</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="table-light">
+            <td class="text-start"></td>
+            <td class="text-start"></td>
+            <td class="text-end"></td>
+            <td class="text-end"></td>
+            <td class="text-end"></td>
+        </tr>
+
+    </tbody>
+    <tfoot>
+        <tr>
+            {% for cash in cash %}
+            <td class="border-0 fw-bold text-end" colspan="4">Cash</td>
+            <td class="border-0 text-end">{{ cash["cash"] | usd}}</td>
+            {% endfor %}
+        </tr>
+        <tr>
+            {% for cash in cash %}
+            <td class="border-0 fw-bold text-end" colspan="4">Total</td>
+            <td class="border-0 w-bold text-end">{{ cash["cash"] | usd}}</td>
+            {% endfor %}
+        </tr>
+    </tfoot>
+</table>
+</main>
+{% endblock %}

@@ -1,0 +1,17 @@
+<!--In the template books.html, we see another loop for each book-->
+{% extends "layout.html" %}
+
+{% block body %}
+<!-- Notice that each <form> includes a hidden value of book['id']. When the button “Add to Cart” is clicked, that ID is sent back to the server.-->
+    <h1>Books</h1>
+    <!-- To iterate all over the books-->
+    {% for book in books %}
+        <h2>{{ book["title"] }}</h2>
+        <form action="/cart" method="post">
+            <!-- here the id of the book is hidde from the user-->
+            <input name="id" type="hidden" value="{{ book['id'] }}">
+            <input type="submit" value="Add to Cart">
+        </form>
+    {% endfor %}
+
+{% endblock %}

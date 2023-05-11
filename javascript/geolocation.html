@@ -1,0 +1,16 @@
+<!--With this we can ask the browsser for a user's GPS coordinates-->
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>geolocation</title>
+    </head>
+    <body>
+        <script>
+
+            navigator.geolocation.getCurrentPosition(function(position) {
+                document.write(position.coords.latitude + "," + position.coords.longitude);
+            });
+        </script>
+    </body>
+</html>

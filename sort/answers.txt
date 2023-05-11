@@ -1,0 +1,13 @@
+sort1 uses: Bubble sort
+
+How do you know?: Because after comparing the sorted files it took most minimum time as compare to other sorts and by its notation
+in the lower omega(n) is shortest time.
+
+sort2 uses: Merge sort
+
+How do you know?: When I compared the time of the random files it has the most minimum time as compared to the other sorts. By
+concluding that in the upper(n log n) is the most shortest and fastest.
+
+sort3 uses: Selection Sort
+
+How do you know?: Because after comparing the time of sorted files it has the most maximum time.

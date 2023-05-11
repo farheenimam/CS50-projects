@@ -1,0 +1,20 @@
+  /* This is how we comment in CSS*/
+  .centered
+  {
+     text-align: center;
+  }
+
+  .large
+  {
+    font-size: large;
+  }
+
+  .medium
+  {
+    font-size: medium;
+  }
+
+  .small
+  {
+    font-size: small;
+  }

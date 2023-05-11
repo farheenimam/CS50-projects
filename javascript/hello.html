@@ -1,0 +1,31 @@
+<!-- In this version of javascript we have added some of the javascript along with html-->
+<!-- But this version is bad design because the co-mingling of the languages is never a good thing as on line#26-->
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <script>
+
+            // querySelector function is javascript version of what we were doing in the CSS to select nodes using hashes, dots or other syntax
+            // The dot notation is to go inside the object just like in the python
+            // The global variable here that lets you to do the stuff with the document, web page itself. One of those function is callled query
+            // -selector that return to you whatever you are selecting
+            // Dot value means go inside the rectangular and grab the actual value of the text that the human typed in
+            function greet()
+            {
+                let name = document.querySelector('#name').value;
+                alert('hello, ' + name);
+            }
+        </script>
+        <title>Helllo</title>
+    </head>
+    <body>
+        <!--Return false will not let the user to submit the form on the server and will return false-->
+        <!--We have created a function called greet-->
+        <!--We will never use onsubmit again its just for demonstration sake-->
+        <form onsubmit="greet(); return false;">
+            <input autocomplete="off" autofocus id="name" placeholder="Name" type="text">
+            <input type="submit">
+        </form>
+    </body>
+</html>

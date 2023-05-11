@@ -1,0 +1,11 @@
+.header{
+    font-style: italic;
+    background-color: #000000;
+    font-size: 0.25 rem;
+    text-align: center;
+}
+
+h1{
+    font-family: italic;
+    font-size: 48px;
+}

@@ -1,0 +1,31 @@
+<!--we use Javascript to make an element "blink", or appear and reappear at an interval-->
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <script>
+
+            //Toggles visibility of greetig
+            function blink()
+            {
+                let body = document.querySelector('body');
+                if (body.style.visibility == 'hidden')
+                {
+                    body.style.visibility = 'visible';
+                }
+                else
+                {
+                    body.style.visibility = 'hidden';
+                }
+            }
+
+            // Blink every 500ms
+            window.setInterval(blink, 500);
+
+        </script>
+        <title>blink</title>
+    </head>
+    <body>
+        Hello, World
+    </body>
+</html>
